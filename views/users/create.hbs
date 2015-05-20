@@ -1,0 +1,22 @@
+<div class="textwidget margin-top-30">
+  <p>Sign up and get started figuring out what you want to do</p>
+</div>
+<div class="widget">
+  <form name="create-user-form" id="create-user-form" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required/>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required value="{{input.email}}" />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="off" required value="{{input.password}}" />
+    </div>
+    <div class="form-submit">
+      <input type="submit" value="Create my account" />
+    </div>
+  </form>
+</div>
