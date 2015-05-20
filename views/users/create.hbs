@@ -5,7 +5,7 @@
   <form name="create-user-form" id="create-user-form" method="post">
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" required/>
+      <input type="text" id="name" name="name" required value="{{input.name}}"/>
     </div>
     <div class="form-group">
       <label for="email">Email</label>
@@ -18,5 +18,6 @@
     <div class="form-submit">
       <input type="submit" value="Create my account" />
     </div>
+    <span style="color:red">{{error}}</span>
   </form>
 </div>
