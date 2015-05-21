@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
+    <title>Whatever{{#if title}} - {{title}}{{/if}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    {{#if name}}
+    <div id="greeting" style="float:right">
+      <strong>Hi, {{name}}!</strong>
+      <a href="/users/logout">Logout</a>
+    </div>
+    {{/if}}
     {{{body}}}
   </body>
 </html>
